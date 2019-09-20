@@ -1,38 +1,138 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <title>Site de Guillaume Marcel</title>
     <link rel="icon" type="image/png" href="assets/images/faviconLPWDS.ico"/>
     <link rel="stylesheet" href="assets/styles/reset.css">
     <link rel="stylesheet" href="assets/styles/main.css">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.7">
     <script src="assets/js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Catamaran|Comfortaa&display=swap" rel="stylesheet">
 </head>
 <body>
-<body>
     <header>
-        <img src="" alt="logo">
+       <div id="hamburger">
+          <div class="hamburger-trait acceuil"></div>
+           <div class="hamburger-trait vieperso"></div>
+           <div class="hamburger-trait viepro"></div>
+           <div class="hamburger-trait galerie"></div>
+       </div>
+       <nav>
         <ul id="menu">
-            <li>A propos</li>
-            <li>Parcours</li>
-            <li>Contacts</li>
+            <li><a class="vieperso" href="#vieperso">Vie Perso</a></li>
+            <li><a class="viepro" href="#viepro">Vie Pro</a></li>
+            <li><a  class="galerie" href="#galerie">Galerie</a></li>
         </ul>
+        </nav>
     </header>
     <main>
         <section id="acceuil">
-            <h1>Guillaume Marcel</h1>
-            <p>Webdesigner</p>
+           <div id="presentation">
+                <h1>Guillaume Marcel</h1>
+                <h2>Webdesigner</h2>
+            </div>
         </section>
         
-        <section id="a-propos">
-           <p></p>
-  
+        <section id="vieperso">
+          <aside>
+           <img src="assets/images/photo16.jpg" class="img-vieperso" alt="fleuve saint-laurent">
+           <h1 id="titrevieperso">Vie Perso</h1>
+           </aside>
+           <article>
+           <p id="textevieperso">Je m’appelle <strong>Guillaume</strong> j’ai 21 ans et j’ai grandi dans un petit village lorrain. Au cours de ma vie j’ai pu découvrir plusieurs passions. A l’âge de 13 j’ai commencé a m’intéressé de près au monde de la web radio, et elle m’a suivi pendant toute mon adolescence, m’a fait grandir et prendre confiance en moi. Au début de cette année j’ai eu la chance de voyager pour mes études au <a href="https://fr.wikipedia.org/wiki/Qu%C3%A9bec">Québec</a> et au <a href="https://fr.wikipedia.org/wiki/%C3%89tats-Unis">États-Unis</a>, ça m’a ouvert aux gens, aux différences culturelles et à voire la vie et le monde qui nous entoure d’une façon différente. Grâce à ce voyage j’ai pu m’essayer à la photographie, un des seuls médias que je m’étais pas encore expérimenter.</p>
+           </article>
         </section>
-
+        
+        <section id="viepro">
+         <article>
+           <p id="texteviepro">Mon parcours a débuté professionnellement avec la radio, où j’ai signé mon « premier emploi » à la sortie du bac avec un service civique de 9 mois. A la suite de ce service civique j’ai intégré un <a href="http://iutmmi.fr/">DUT MMI</a> à <a href="https://fr.wikipedia.org/wiki/Saint-Di%C3%A9-des-Vosges">Saint-Dié des Vosges</a> pour développer mes compétences en audiovisuel, mais j’ai apprécié le côté « Internet » de la formation et pour cette raison j’ai décidé de poursuivre mon cursus dans le webdesign à <a href="https://fr.wikipedia.org/wiki/Limoges">Limoges</a> pour penser et concevoir les interactions de demain. </p>
+           </article>
+            <aside>
+           <img src="assets/images/photo14.jpg" class="img-viepro" alt="photo new-york">
+           <h1 id="titreviepro">Vie Pro</h1>
+           </aside>
+        </section>
+        
+        <section id="galerie">
+           <h1>Galerie Photo</h1>
+            <div id="grid_container">
+               <div class="grid-item"><img src="assets/images/photo1.jpg" alt="Montréal avec de la neige"></div>
+               <div class="grid-item"><img src="assets/images/photo2.jpg" alt="Toronto depuis un beateau"></div>
+               <div class="grid-item"><img src="assets/images/photo3.jpg" alt="Washington"></div>
+               <div class="grid-item"><img src="assets/images/photo4.jpg" alt="Un homme à Matane"></div>
+               <div class="grid-item"><img src="assets/images/photo5.jpg" alt="Montréal avec de la neige 2"></div>
+               <div class="grid-item"><img src="assets/images/photo6.jpg" alt="Montréal depuis le Mont-royal"></div>
+               <div class="grid-item"><img src="assets/images/photo7.jpg" alt="Matane dans la neige"></div>
+               <div class="grid-item"><img src="assets/images/photo8.jpg" alt="Traversée sur la mer"></div>
+               <div class="grid-item"><img src="assets/images/photo9.jpg" alt="Traversée sur la mer"></div>
+               <div class="grid-item"><img src="assets/images/photo10.jpg" alt="Les chutes du MontMorency"></div>
+               <div class="grid-item"><img src="assets/images/photo11.jpg" alt="Central Park"></div>
+               <div class="grid-item"><img src="assets/images/photo12.jpg" alt="Coney Island"></div>
+               <div class="grid-item"><img src="assets/images/photo13.jpg" alt="New York"></div>
+               <div class="grid-item"><img src="assets/images/photo14.jpg" alt="New York"></div>
+               <div class="grid-item"><img src="assets/images/photo15.jpg" alt="Brooklyn"></div>
+               <div class="grid-item"><img src="assets/images/photo16.jpg" alt="Un homme à Matane"></div>
+            </div>
+        </section>
+        
     </main>
-    <footer>
-        Guillaume Marcel | 2019
-    </footer>
+        <footer id="#footer">
+            <p>
+             <a href="https://www.instagram.com/guillaumemarcel_/" target="_blank"><img src="assets/images/resoc/instagram.png" alt="logo instragram"></a>
+             <a href="https://www.linkedin.com/in/guillaume-marcel-391a6a185/"  target="_blank"><img src="assets/images/resoc/linkedin.png"  alt="logo linkedin"></a>
+             <a href="http://guillaume.studio" target="_blank"><img src="assets/images/resoc/worldwide.png"  alt="logo site web"></a>
+             <a href="mailto:marcelguillaume54@gmail.com"><img src="assets/images/resoc/telegram.png"  alt="mail"></a>
+           
+                <br>
+                Guillaume Marcel | 2019 
+            </p>
+        </footer>
 </body>
-</body>
+
+<script type="text/javascript">
+    $(document).scroll(function () {
+            var sc = $(document).scrollTop();
+
+          if(sc >= 798 && sc <=1212){
+              $(".vieperso").addClass("active");
+              $(".viepro").removeClass("active");
+              $(".galerie").removeClass("active");
+              $(".acceuil").removeClass("active");
+            }
+    
+             if(sc >= 1213 && sc <=1629){
+              $(".vieperso").removeClass("active");
+              $(".viepro").addClass("active");
+              $(".galerie").removeClass("active");
+              $(".acceuil").removeClass("active");
+            }
+    
+            if(sc >= 1630 && sc <=1942){
+              $(".vieperso").removeClass("active");
+              $(".viepro").removeClass("active");
+              $(".galerie").addClass("active");
+              $(".acceuil").removeClass("active");
+            }
+    
+    
+    
+        if(sc < 584){
+              $(".vieperso").removeClass("active");
+              $(".viepro").removeClass("active");
+              $(".galerie").removeClass("active");
+              $(".acceuil").addClass("active");
+            }})
+    
+    $("#hamburger").click(function(){
+        $('nav').fadeToggle();
+    }
+    )
+    
+
+    
+        
+    </script>
+
 </html>
